@@ -1,0 +1,20 @@
+# Compose file template variables
+PIHOLE_DOMAIN=internal
+PIHOLE_HOSTNAME=dns
+PIHOLE_NETWORK_GATEWAY=192.168.53.1
+PIHOLE_SUBNET=192.168.53.0/24
+PIHOLE_VLAN_PARENT_DEVICE=eth0
+
+# Pihole container runtime variables (https://docs.docker.com/compose/env-file/)
+# See the Pi-hole docs for more options:
+# https://github.com/pi-hole/docker-pi-hole/blob/master/README.md#environment-variables
+DHCP_ACTIVE=false
+DHCP_END=192.168.53.200
+DHCP_ROUTER=192.168.53.1
+DHCP_START=192.168.53.100
+DNSMASQ_LISTENING=local
+FTLCONF_LOCAL_IPV4=192.168.53.53
+PIHOLE_DNS_="127.0.0.1#5335"
+TZ="America/Chicago"
+VIRTUAL_HOST=dns.internal
+#WEBPASSWORD=It is Recommended that You uncomment this and provide your own secure password
